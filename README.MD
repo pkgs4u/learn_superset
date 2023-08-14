@@ -7,11 +7,18 @@
 />
 
 ## Configure Virtual Environment
+We will recommend to use Virtual environment for installing Superset.
+You may use any editor/IDE as your wish. Here we use pycharm. Go to terminal in pycharm and create a virtual environment.
 
 ```shell
 $ python3 -m venv venv
 $ source venv/bin/activate
 ```
+Once you setup virtual environment, better to install the packages mentioned in the requirements.txt.
+```shell
+$ pip install -r requirements.txt
+```
+
 
 ## Installing and Initializing Superset
 
