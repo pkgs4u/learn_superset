@@ -38,6 +38,7 @@ To avoid the error we are doing it ahead.
 $ export FLASK_APP=superset
 ````
 
+### Set Secret_key
 Go to "venv/lib/python3.10/site-packages/superset/" and copy _config.py_ file.
 Paste it in your PYTHON_PATH (the place where the python.exe is located, you may type ````$ which python```` in your terminal to find path). 
 It would be mostly venv/bin/ for those who use virtual environment.<br>
@@ -48,7 +49,7 @@ If you want to generate a strong key run this in your terminal.
 ```sh 
 $ openssl rand -base64 42
 ```
-Copy the generated key and paste against SECRET_KEY.
+Copy the generated key and paste against SECRET_KEY in superset_config.py.
 ```bash
 SECRET_KEY = 'your_high_secure_key'
 ```
